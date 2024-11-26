@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="containner">
+        <from>
+        <h1>Currency Converter</h1>
+            <div class="amount">
+                <p>Enter amount</p>
+                <input class='input' type="text" placeholder="Amount">
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select">
+                        <img id="FrImg" src="https://flagcdn.com/16x12/pkr.png">
+                        <select id="fromCurr" class="from">
+                            <option>Select Country</option>
+                            <option class="USD">USD</option>
+                            <option class="PKR">PKR</option>
+                            <option class="IRL">INR</option>
+                            <option class="EURO">EUR</option>
+                            <option class="EURO">AFN</option>
+                            <option class="EURO">QAR</option>
+                            <option class="EURO">SAR</option>
+                        </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select">
+                    <img id='toImg' src="https://flagcdn.com/16x12/usa.png">
+                    <select class="to">
+                        <option>Select Country</option>
+                        <option class="USD">USD</option>
+                        <option class="PKR">PKR</option>
+                        <option class="IRL">INR</option>
+                        <option class="EURO">EUR</option>
+                        <option class="EURO">AFN</option>
+                        <option class="EURO">QAR</option>
+                        <option class="EURO">SAR</option>
+                    </select>
+                </div>
+                </div>
+            </div>
+            <div class="msg"></div>
+                <button class="exch">Get Exchange Rate</button>
+        </from>
+</div>
+    <script src="country.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
